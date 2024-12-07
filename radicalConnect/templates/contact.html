@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main> <section class="hero"> <h1>Harnessing Industry Expertise and Academic Excellence</h1> <p>We collaborate with industry leaders and academia to empower learners to thrive working with cutting-edge technologies.</p> <div class="partners"> <button class="bg-success">
+    <a href="https://alison.com/certificate-courses?utm_source=google&utm_medium=cpc&utm_campaign=PPC_Tier-4_First-Click_Publisher-Courses&utm_adgroup=Course-4138_Advanced-Diploma-in-Cloud-Computing-for-Amazon-Web-Services&gclid=CjwKCAiA9bq6BhAKEiwAH6bqoOAt4L9XDP02xjNhT-TZ6i0yIZTqwobNsiA2LUnNL1_pcIO2kOEvTRoC8ywQAvD_BwE&gad_source=1" style="text-decoration: none; color:white;">Google Cloud</a></button> <button class="bg-success">
+    <a href="https://www.ibm.com/training/search?cost=free" style="text-decoration: none; color: white">IBM</a></button> <button class="bg-success">
+    <a href="https://hostdiggy.com/?s=networking"  style="text-decoration: none; color: white">FutureSkills Prime</a></button> <button class="bg-success">
+    <a href="https://futureskillsacademy.com/course/ai-for-everyone/"  style="text-decoration: none; color: white">Microsoft</a></button> <button class="bg-success"><a href="https://futureskillsacademy.com/"  style="text-decoration: none; color: white;">Maseno University Enroll for free</a></button> </div> </section> <section class="courses"> <h2>Browse Our Online Professional Courses Catalog</h2> <p>Discover courses that build job-ready skills and fuel your career.</p>
+    <img src="{% static 'images/contact.jpg' %}" alt=""> </section> </main> <div class="chatbox"> <p>Hi! I'm a virtual assistant. How can I help you today?</p> </div>
+
+<main class="contact">
+    <section class="hero" style="background-color: #75b798;">
+  <div class="row col-md-12">
+    <div class="contact bg-body-tertiary" style="font-size: 18px; color: #6ea8fe; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px;border-radius: 10px;">
+
+        <h1 style="color: darkolivegreen">Job Updates</h1>
+    <form action="" method="POST"  enctype="multipart/form-data" style="padding-bottom: 10px;  color: dimgray;">
+        {% csrf_token %}
+        <h1 style="color: darkgrey; font-size: 20px; text-align: center">This Platform is here to help.Contact us for job updates.</h1>
+        <p style="font-size: 14px; text-align: center">We call our enrolled students once a job opportunity occurs.</p>
+        {{ form.as_p }}
+        <div class="d-grid gap-2">
+  <button class="btn btn-primary" type="submit" style="font-size: 18px; color: #c5d7f2" >SUBMIT</button>
+</div>
+    </form>
+</div>
+    <div class="col-md-3"></div>
+      <div class="col-md-3"></div>
+      </section>
+</main>
+<main>
+    <section class="hero">
+        <div class="row col-md-12">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8182953277997!2d34.59738!3d-0.006416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa9f1efed77e9%3A0xb9c8a555cc010ad6!2sMaseno%20University-Kisumu%20Campus!5e0!3m2!1sen!2ske!4v1733338565198!5m2!1sen!2ske" width="560vh" height="315vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <p>Radical Solutions contact information:</p>
+            <div>
+                <p>Gmail : <a href="mailto:info@radisolutions.com" style="text-decoration: none; color: #997404">info@radisolutions.com</a></p>
+            </div>
+            <div>
+                <p>Phone: <a href="tel:0717140342" style="text-decoration: none; color: #997404">+254717140342</a></p>
+                <p style="color: #007BFF">We are here to make sure you achieve your goals.</p>
+                <p>You can follow us via this accounts</p>
+        <div class="social-login">
+            <a href="https://google.com/google-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/search.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-google-plus">Google</i></a>
+            <img src="" alt="">
+            <a href="https://github.com/github-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/github.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-github">Github</i></a>
+            <a href="https://facebook.com/facebook-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/facebook.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-facebook">Facebook</i></a>
+            <a href="https://twitter.com/twitter-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/twitter.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-twitter">Twitter</i></a>
+            <a href="https://linkedin.com/linkedin-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/linkedin.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-linkedin">Linkedin</i></a>
+
+        </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+
+{% endblock %}

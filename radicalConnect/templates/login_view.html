@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main><section class="hero-image1">
+    <h1 style="color: #031633;">Radical Solution Login Page</h1>
+    <p class="" style="font-size: 30px; color: green">Let's Get Started</p>
+    <p style="font-size: 30px; color: green">Start by login into your account below</p>
+    <p style="font-size: 30px; color: green">Grow your knowledge through personalized mentoring and support from industry experts.</p>
+    </section>
+</main>
+<main>
+<section class="row">
+   <a href="{% url 'signup' %}"><button class="bg-primary" style="border:none; color:white" type="submit"> Sign-in</button></a>
+<div class="row col-md-6" style="border-radius: 10px; background-color: lightblue;">
+    <h1>Log-in</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <a href="https://openstax.org/"><button type="submit" class="login-btn bg-primary" style="color: white">Login</button></a>
+        <p>OR log in using your social account</p>
+        <div class="social-login">
+            <a href="https://openstax.org/" style="width: 20px; height: 20px; text-decoration: none"><img src="{% static 'images/search.png' %}" alt="" style="width: 20px; height: 20px; text-decoration: none"><i class="fa fa-google-plus">Google</i></a>
+            <a href="https://openstax.org/" style="width: 20px; height: 20px; text-decoration: none"><img src="{% static 'images/github.png' %}" alt="" style="width: 20px; height: 20px; text-decoration: none"><i class="fa fa-github">Github</i></a>
+            <a href="https://facebook.com/facebook-login" style="width: 20px; height: 20px; text-decoration: none"><img src="{% static 'images/facebook.png' %}" alt="" style="width: 20px; height: 20px; text-decoration: none"><i class="fa fa-facebook">Facebook</i></a>
+            <a href="https://twitter.com/twitter-login" style="width: 20px; height: 20px; text-decoration: none"><img src="{% static 'images/twitter.png' %}" alt="" style="width: 20px; height: 20px; text-decoration: none"><i class="fa fa-twitter">Twitter</i></a>
+            <a href="https://openstax.org/" style="width: 20px; height: 20px; text-decoration: none"><img src="{% static 'images/linkedin.png' %}" alt="" style="width: 20px; height: 20px; text-decoration: none"><i class="fa fa-linkedin">Linkedin</i></a>
+
+        </div>
+    </form>
+</div>
+    </section>
+</main>
+
+<div class="container">
+    <div class="feature">
+        <h2 class="row bg-info">Hands-on labs & projects</h2>
+        <p>Build practical competencies through real-world challenges.</p>
+    </div>
+    <div class="feature" style="background-color: #9eeaf9; background-size: cover;">
+        <h2>1-on-1 mentoring & support</h2>
+        <p>Grow your knowledge through personalized mentoring and support from industry experts.</p>
+    </div>
+    <div class="feature" style="background-color: #9eeaf9; background-size: cover;">
+        <h2>Exam practice & preparation</h2>
+        <p>Prepare for certification with practice papers, experienced advice, and top tips.</p>
+    </div>
+    <div class="feature" style="background-color: #9eeaf9; background-size: cover;"> <h2>Job-ready skills focus</h2>
+        <p>Gain in-demand skills employers need.</p>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

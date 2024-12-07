@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="icon" href="{% static 'images/icon.png' %}" type="image/-x">
+</head>
+<body>
+  <nav>
+  <div class="navbar bg-secondary">
+      <a href="{% url 'index' %}" class="logo"><img src="{% static 'images/problem-solved.png' %}" style="width: 10vh; height: 10vh">Home</a>
+    <div class="dropdown">
+      <button class="drop-btn" style="font-size: 12px; border-radius: 4px; text-align: center"><a href="{% url 'course' %}" >Course</a>
+        <i class="fa fa-caret-down"></i>
+        </button>
+      <div class="dropdown-content text-bg-info">
+        <a href="https://www.analyticsinsight.net/artificial-intelligence/top-free-training-courses-on-ai-for-everyone?form=MG0AV3">AI Course</a>
+        <a href="https://www.cisco.com/c/m/en_sg/partners/cisco-networking-academy/index.html">Cyber-Security</a>
+        <a href="https://moringaschool.com/?utm_source=google&utm_medium=cpc&utm_campaign=search-generic&gad_source=1&gclid=CjwKCAiAxqC6BhBcEiwAlXp45x6YEXvvwWkl6lmi98Eduu9L3OuxlCilZgXt9UitvzdhwZ8TvJU7cRoC1ocQAvD_BwE">Computer science</a>
+        <a href="https://www.udemy.com/course/machinelearning/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_Keyword_Beta_Prof_la.EN_cc.ROW-English&campaigntype=Search&portfolio=ROW-English&language=EN&product=Course&test=&audience=Keyword&topic=Machine_Learning&priority=Beta&utm_content=deal4584&utm_term=_._ag_166536831328_._ad_696233842753_._kw_machine+learning+course_._de_c_._dm__._pl__._ti_kwd-338471928646_._li_9070327_._pd__._&matchtype=b&gad_source=1&gclid=CjwKCAiAxqC6BhBcEiwAlXp45wWinNn3vH32_sQfwuLj64vS6KouZKYKQyX5SRIpF7HX03MNDBW1kBoCZWUQAvD_BwE&couponCode=BFCPSALE24">Machine Learning</a>
+        <a href="https://www.w3schools.com">Programming</a>
+        <a href="https://developer.android.com/courses">Mobile Dev</a>
+        <a href="https://www.humanskillsmastery.com/">Human-Skills</a>
+        <a href="https://topperworld.in/">Devops</a>
+        <a href="https://www.vidyalankar.org/gate/assets/docs/notes/maths.pdf">Engineering Maths</a>
+        <!-- Add course links here -->
+      </div>
+    </div>
+    <input type="text" id="searchInput" placeholder="Search" aria-label="Search">
+    <a href="https://www.google.com"><button  id="searchButton" class="btn btn-success" type="submit" >search</button></a>
+    <a href="{% url 'about' %}"><button class="drop-btn"  style="font-size: 15px; border-radius: 4px;">About</button></a>
+    <a href="{% url 'contact' %}"><button class="drop-btn" style="font-size: 15px; border-radius: 4px;">Contact</button></a>
+    <a href="{% url 'blog' %}" ><button class="drop-btn" style="font-size: 15px; border-radius: 4px;">Blog</button></a>
+    <a href="{% url 'login_view' %}"><button class="login-btn" style="color: white; border-radius: 4px">LOGIN</button></a>
+    <a href="{% url 'signup' %}"><button class="signup-btn bg-danger" style="color: white; border-radius: 4px">SIGNUP FOR FREE</button></a>
+  </div>
+</nav>
+
+
+
+{% block content %}
+<main>
+<section class="row"> <h2>Course Overview</h2> <p>This Radical Solutions Architecture Capstone Project is a practical and comprehensive project designed to test and enhance your knowledge and skills in cloud architecture.</p> <p>Through hands-on labs and simulations, you will engage in tasks such as:</p> <ul> <li>Cloning a web application repository</li> <li>Integrating APIs</li> <li>Creating VM instances using Terraform</li> <li>Monitoring them with Cloud monitoring</li> <li>Deploying applications on the cloud</li> <li>Triggering Continuous Delivery pipelines</li> <li>Enhancing web application security</li> </ul> <p>Once you have successfully completed this capstone project, you will have confirmation of your expertise and practical proficiency, which you can highlight on your professional profiles and in your resume. Plus, you will have valuable hands-on examples of your skills that you can talk about in interviews.</p> </section>
+<section class="how-it-works"> <h2>How It Works</h2> <p>This capstone project comprises three purposely designed modules that take you on a carefully defined learning journey.</p> <p>It is a self-paced project and will take at least 15 hours to complete, so it’s important you set aside enough time to do this successfully. You will be given detailed instructions on how to complete it.</p> <p>As part of our mentoring service you will have access to valuable guidance and support throughout the project. Plus, we provide a dedicated discussion space where you can ask questions, chat with your peers, and resolve issues.</p> <p>Once you have successfully completed the project, you will earn your Certificate of Completion.</p> </section>
+    <a href="https://studycrumb.com/capstone-project?form=MG0AV3" style="text-decoration: none"><button class="bg-success" style="border-radius: 5px; text-align: center; color: white; border: none">Start Learning</button></a>
+</main>
+{% endblock %}
+
+ <footer style="padding-top: 50px;">
+        <section class="follow-us">
+            <h2>Follow Us</h2>
+            <div><a href="mailto:gracekavai3@gmail.com" style="font-size: 20px; color: deepskyblue; text-decoration: none">contact us via Radical Solution@gmail.com</a></div>
+            <div><a href="tel:+254717474393" style="text-decoration: none; color: greenyellow">Call us +254-717474393</a></div>
+            <ul>
+                <li><a href="https://www.linkedin.com/feed/"><img src="{% static 'images/linkedin.png' %}" alt="" style="width: 40px; height: 40px; cursor: pointer; " >LinkedIn</a></li>
+                <li><a href="https://developer.x.com/en"><img src="{% static 'images/twitter.png' %}" alt="" style="width: 40px; height: 40px;">Twitter</a></li>
+                <li><a href="https://opswatacademy.com/introduction-critical-infrastructure-protection?utm_source=Facebook&utm_medium=ICIP+-+Free+Course+Program+-+Oct%2724&utm_campaign=TopCount&utm_term=Cybersecurity+related&utm_content=Post+1+-+Urge+users+to+enroll+the+free+course+-+Square+-+Use+existing+post&utm_id=120211540502430497&fbclid=IwY2xjawG_CodleHRuA2FlbQEwAGFkaWQBqxTeMRwZoQEdl4SVqGvQJKbu2LthCs42s9gFH30jc74-IsZ4W9pM2bdm6pA4iMclTl-C_aem_G75Xva_oT939CR-H3_0a9Q"><img src="{% static 'images/facebook.png'%}" alt="" style="width: 40px; height: 40px;">Facebook</a></li>
+                <li><a href="https://moringaschool.com/courses/data-science/?utm_source=facebook&utm_medium=social-paid&utm_campaign=leadgen-ds-professions&utm_id=120211278817640156&utm_content=120213634934140156&utm_term=120213602469940156&fbclid=PAZXh0bgNhZW0BMABhZGlkAasV_wTCW3wBpqR96JrRBgyB2VV_vyeCx01010rHhAmQWmqOxsIokCQE7U3lMB-Qu-bAMA_aem_b4jXzSkGCUjEvY2ZfpQO2A"><img src="{% static 'images/instagram.png' %}" alt="" style="width: 40px; height: 40px;">Instagram</a></li>
+            </ul>
+        </section>
+    </footer>
+
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+
+
+</body>
+</html>

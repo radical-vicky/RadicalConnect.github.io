@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<body>
+<div>
+  <main><section class="row">
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 style="color: #0dcaf0">Welcome to Radical Solutions</h1>
+        <div class="hero-text" style="text-align: center; color: white">
+            <p style="font-size: 20px">We aim to bridge the gap between education and employment for undeserved <em style="color: green">communities</em></p>
+            <p>This web application is designed to provide free skill development courses,<em style="color: green">empowering individuals with the knowledge and capabilities needed</em> to access better job opportunities and improve their socioeconomic status.</p>
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+    </main>
+ </div>
+
+<main> <section class="banner">
+    <div class="banner-content" style="width: 100%; height: 300px">
+        <h1>Your Desired Career Begins Here</h1>
+        <p>This platform is offering a wide range of courses, from vocational training in trades like carpentry and plumbing to digital literacy,coding,and entrepreneurship.</p>
+        <p>Get job-ready with the hands-on experience you need to take your career up a gear!</p>
+        <a href="https://alison.com" class="btn btn-success">Learn More</a> </div>
+    <img src="{% static 'images/index.jpg' %}" alt="Person using laptop" class="banner-image" style="width: 100%; height: 300px">
+</section>
+</main>
+<h4 style="color: green">Here We collaborate with various global with various institutions to create a dynamic job marketplace,allowing users to apply their newly acquired skills directly to available job opportunities.</h4>
+
+<div class="accordion accordion-flush" id="accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Engineering Courses
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Computer Engineering</h5>
+        <p class="card-text">
+          Combines electrical engineering and computer science to develop computer systems. Key Courses: Microprocessors, Embedded Systems, Computer Architecture, Software Engineering.
+          </p>
+        <a href="https://www.mygreatlearning.com/software/free-courses?form=MG0AV3" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Software Engineering</h5>
+        <p class="card-text">Provides free courses on programming and software development, including beginner-friendly courses like "Introduction to Programming and Computer Science" and "CS50's Introduction to Computer Science" from Harvard University</p>
+        <a href="https://www.mygreatlearning.com/software/free-courses?form=MG0AV3" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Aerospace Engineer</h5>
+        <p class="card-text">Working with aircraft manufacturers, space agencies, or defense contractors.</p>
+        <a href="https://www.mygreatlearning.com/software/free-courses?form=MG0AV3" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Industrial Engineering</h5>
+        <p class="card-text">Jobs in manufacturing, logistics, healthcare, and business process optimization.</p>
+        <a href="https://www.mygreatlearning.com/software/free-courses?form=MG0AV3" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Mathematics Course
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Calculus</h5>
+        <p class="card-text">Learn calculus with online courses and programs</p>
+        <a href="https://www.edx.org/learn/calculus?form=MG0AV3" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Descriptive Statistics</h5>
+        <p class="card-text">Descriptive statistics are used to summarize and describe the main features of a data set. Here are the key components</p>
+        <a href="https://alison.com/course/diploma-in-mathematics-revised?utm_source=google&utm_medium=cpc&utm_campaign=PPC_Tier-4_First-Click_Alison-Courses&utm_adgroup=Course-2058_Diploma-in-Mathematics-Revised&gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDA7OcGYFSP3ZzjiBV58-vW977_a1MzM51YtZ8pNPaKSKoePkjYXe84aAn50EALw_wcB&gad_source=1" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Mobile Programming Course
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Android Development</h5>
+        <p class="card-text">Android Development course</p>
+        <a href="https://developer.android.com/courses/?form=MG0AV3" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+          <img src="{% static 'images/bac.png' %}" alt="" style="width: 50px; height: 50px">
+        <h5 class="card-title">Kotlin for Android</h5>
+        <p class="card-text">Develop Android apps with Kotlin</p>
+        <a href="https://developer.android.com/kotlin" class="btn btn-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+  </div>
+</div>
+<main>
+    <section>
+        <div class="container">
+            <div class="row">
+                <p style="font-size: 20px">Additionally,the platform will provide users with resources for resume building,interview preparation,and career counsedling.Community support features,such as forums and mentorship programs,will foster a supportive learning environment and encourage users to share their experiences and success.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+
+
+{% endblock %}

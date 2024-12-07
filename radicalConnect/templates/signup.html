@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<body>
+<main> <section class="banner"> <div class="banner-content"> <h1> Radical Solutions is The TechMaster Certificate Programs in all & units(subjects)</h1> <p>Designed to get you hired!</p> <ul> <li>All degrees eligible</li> <li>No experience required</li> </ul> <a href="https://www.alison.com" class="btn bg-warning">Enroll Now</a> </div> <img src="{% static 'images/av.jpg'%}" alt=""> </section> </main> <aside class="virtual-assistant"> <div class="assistant-content"> <p>Hi! I'm a virtual assistant. How can I help you today?</p> </div>
+    </aside>
+<main><section class="hero">
+    <div class="container" style="margin-top:100px;">
+        <div class="row">
+            <div class="col-md-6" style="border-radius:10px; background-color:lightskyblue;">
+        <h1>Create a new account</h1>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form2.as_p }}
+            <div class="d-grid gap-2">
+            <button class="bg-danger" style="border: none; color: white">SUBMIT</button>
+                <p>OR log in using your social account</p>
+        <div class="social-login">
+            <a href="https://google.com/google-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/search.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-google-plus">Google</i></a>
+            <img src="" alt="">
+            <a href="https://github.com/github-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/github.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-github">Github</i></a>
+            <a href="https://facebook.com/facebook-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/facebook.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-facebook">Facebook</i></a>
+            <a href="https://twitter.com/twitter-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/twitter.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-twitter">Twitter</i></a>
+            <a href="https://linkedin.com/linkedin-login" style="width: 40px; height: 40px; text-decoration: none"><img src="{% static 'images/linkedin.png' %}" alt="" style="width: 40px; height: 40px; text-decoration: none"><i class="fa fa-linkedin">Linkedin</i></a>
+
+        </div>
+            </div>
+            </div>
+        </form>
+            </div>
+</div>
+    </div>
+    </section>
+    </main>
+
+
+{% endblock %}

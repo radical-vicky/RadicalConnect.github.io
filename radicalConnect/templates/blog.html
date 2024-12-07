@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<main xmlns="http://www.w3.org/1999/html">
+        <section class="articles">
+            <article>
+                <h3 class="bg-secondary" style="font-size: 40px; padding: 0">Our Blog</h3>
+                <h2 class="text-bg-info" style="font-size: 30px"> Radical Solutions is involved in Land Top Cloud Jobs with Practical Training from Google Cloud labs and Radical Solutions Online</h2>
+                <p style="font-size: 12px">In today's job market, it's not just about what you know—it's about what you can do. Employers are hunting for candidates who can hit the ground running with real-world, hands-on...</p>
+
+                <p><div class="card" style="width: 18rem;">
+  <img src="{% static 'images/card1.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><a href="https://youtu.be/dKip3rpuEvY?si=CRIKsB6Xsdx_6cpK" style="text-decoration: none">Imagine a future where your devices understand your needs before you articulate them, businesses anticipate market shifts with uncanny accuracy, and healthcare is pre-emptively </a></p>
+  </div>
+</div><small>November 26, 2024 | 598 views</small>
+            </article>
+            <article>
+                <h2>How to Tailor Your Resume for Artificial Intelligence Job Applications</h2>
+                <p>Did you know? Most companies today, including over 97 percent of Fortune 500 companies, rely on an applicant tracking system, or ATS, to help them hire new employees. So many...</p>
+                <p><div class="card" style="width: 18rem;">
+  <img src="{% static 'images/card2.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><a  style="text-decoration: none" href="{% url 'about' %}">We are here to make sure you get the best opportunity.</a></p>
+  </div>
+</div><div class="card" style="width: 18rem;">
+  <img src="{% static 'images/card4.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+      <p class="card-text"><a href="https://topperworld.in/python-tutorial-2/" style="text-decoration: none">We care about you</a></p>
+  </div>
+</div><small>September 10, 2024 | 543 views</small>
+            </article>
+            <article>
+                <h2>Top 10 Data Analyst Interview Questions and How to Answer Them</h2>
+                <p>Did you know... 90 seconds is all it takes for 33% of recruiters to decide if a candidate will be hired or not? Scary, huh? Because it...</p>
+                <p><div class="card" style="width: 18rem;">
+  <img src="{% static 'images/card5.jpg' %}" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <p class="card-text">
+        <a href="https://topperworld.in/java/-interview-questions/" style="text-decoration: none">Job Interviews</a>
+  </div>
+</div><small>August 25, 2024 | 712 views</small></p>
+            </article>
+        </section>
+        <aside class="about">
+            <h2>About Radical Solution Online</h2>
+            <p><div class="card" style="width: 18rem;">
+  <img src="{% static 'images/card3.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><a href="https://topperworld.in/python-tutorial-2/" style="text-decoration: none">We are concerned with all Knowledge</a></p>
+  </div>
+</div>Radical Solutions Online is a "Smart" learning platform that helps users acquire the most in-demand skills for the technology field. We go "beyond certifications," using a human-centered approach to learning that drives deep subject matter expertise, soft skills, and practical experience today's employers are looking for.</p>
+        </aside>
+    </main>
+
+
+
+
+
+
+{% endblock %}
